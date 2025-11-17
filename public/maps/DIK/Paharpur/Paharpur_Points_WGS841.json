@@ -1,0 +1,63 @@
+/****************************************************************************************
+-- This script performs the following steps:
+-- 1. Creates a linked server (if it does not already exist) from the local instance
+--    (SJDAP-MS-LT-KF) to the remote instance (91.239.146.172).
+-- 2. Copies only the schema (no data) of dbATH.dbo.Tehsils into a new table
+--    Tehsils in the target database on SJDAP-MS-LT-KF.
+--
+-- BEFORE RUNNING:
+-- • Replace [TARGET_DATABASE] with the actual database name on SJDAP-MS-LT-KF 
+--   where you want the Tehsils table to be created.
+-- • The linked-server name below is set to LS_dbATH. If you prefer a different name, 
+--   replace LS_dbATH everywhere in this script.
+-- • Replace testuser01 / 7dv$b822p; with the actual login/password that can read dbATH
+--   on the remote instance.
+****************************************************************************************/
+
+/*
+-- STEP 1: Create Linked Server (only if it doesn’t already exist)
+--–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+IF NOT EXISTS (
+    SELECT 1
+      FROM sys.servers
+     WHERE name = N'LS_dbATH'    -- linked-server name
+)
+BEGIN
+    EXEC sp_addlinkedserver 
+        @server     = N'LS_dbATH',
+        @srvproduct = N'',
+        @provider   = N'SQLNCLI',            -- SQL Server Native Client provider
+        @datasrc    = N'91.239.146.172';      -- remote instance IP
+    
+    EXEC sp_addlinkedsrvlogin 
+        @rmtsrvname  = N'LS_dbATH',
+        @locallogin  = NULL,                 -- map all local logins to same remote credentials
+        @useself     = N'FALSE',
+        @rmtuser     = N'testuser01',        -- replace with remote login
+        @rmtpassword = N'7dv$b822p;';        -- replace with remote password
+END
+GO
+
+/*
+-- STEP 2: Copy Only the Table Schema (no data) from the remote Tehsils into the target DB
+--–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+USE [SJDAP-MS-LT-KF];   -- ← replace with your actual target DB name on SJDAP-MS-LT-KF
+GO
+
+IF OBJECT_ID(N'dbo.Tehsils', N'U') IS NOT NULL
+BEGIN
+    PRINT 'Table dbo.Tehsils already exists in TARGET_DATABASE. Dropping it first.';
+    DROP TABLE dbo.Tehsils;
+END
+GO
+
+-- Create a new, empty Tehsils table in TARGET_DATABASE with the same columns as dbATH.dbo.Tehsils:
+SELECT TOP 0 *
+INTO dbo.Tehsils
+FROM [LS_dbATH].dbATH.dbo.Tehsils;
+GO
+
+PRINT 'Schema copy complete: dbo.Tehsils created in TARGET_DATABASE on SJDAP-MS-LT-KF.';
+GO

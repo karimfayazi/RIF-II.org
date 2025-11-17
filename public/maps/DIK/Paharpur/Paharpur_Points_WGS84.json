@@ -1,0 +1,545 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping site 1",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.96915,
+          32.10015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping site 2",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.96746,
+          32.10027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 3",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.96666,
+          32.10092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 4",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.96502,
+          32.10226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "dumping site 5",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.96545,
+          32.10257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 6",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.96714,
+          32.10353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 7",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.96694,
+          32.10313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 8",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.96807,
+          32.10284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 9",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.96809,
+          32.10288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 10",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.96648,
+          32.10569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 11",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.96853,
+          32.10561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 12",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.96889,
+          32.10649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 13",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.97088,
+          32.1063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 14",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.97226,
+          32.10712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 15",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.97249,
+          32.10732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 16",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.97241,
+          32.10755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 17",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.97234,
+          32.10777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 18",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.97142,
+          32.10882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 19",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.97144,
+          32.10903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 20",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.97266,
+          32.10884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 21",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.97475,
+          32.10852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 22",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.97442,
+          32.10598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 23",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.97485,
+          32.10556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Dumping Site 24",
+        "Feature": "Dumping Site",
+        "Status": "Unofficial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.97623,
+          32.1059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Water Tank 2",
+        "Feature": "Over Head Reservoir",
+        "Status": "Non-Functional"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.969,
+          32.1048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Tube Well-4",
+        "Feature": "Tube Well",
+        "Status": "Non-Functional"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.9692,
+          32.1049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Tube Well-3",
+        "Feature": "Tube Well",
+        "Status": "Functional"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.9691,
+          32.1049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Water Tank 1",
+        "Feature": "Over Head Reservoir",
+        "Status": "Functional"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.9776,
+          32.1101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Tube Well-1",
+        "Feature": "Tube Well",
+        "Status": "Non-Functional"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.9774,
+          32.1099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "District": "D.I Khan",
+        "Tehsil": "Paharpur",
+        "NC": "Paharpur",
+        "Name": "Tube Well-2",
+        "Feature": "Tube Well",
+        "Status": "Non-Functional"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.9772,
+          32.1099
+        ]
+      }
+    }
+  ]
+}
