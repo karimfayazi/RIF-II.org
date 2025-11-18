@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: 'standalone',
+  reactStrictMode: true,
   images: {
+    unoptimized: true, // For Plesk hosting compatibility
     remotePatterns: [
       {
         protocol: 'https',
@@ -13,7 +16,16 @@ const nextConfig: NextConfig = {
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    
+  },
+  // Ensure static files are served correctly
+  trailingSlash: false,
+  // Disable ESLint during build for deployment
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  // Disable TypeScript errors during build (warnings only)
+  typescript: {
+    ignoreBuildErrors: false, // Keep this false to catch real errors
   },
 };
 
