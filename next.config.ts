@@ -19,10 +19,6 @@ const nextConfig: NextConfig = {
   },
   // Ensure static files are served correctly
   trailingSlash: false,
-  // Disable ESLint during build for deployment
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   // Disable TypeScript errors during build (warnings only)
   typescript: {
     ignoreBuildErrors: false, // Keep this false to catch real errors

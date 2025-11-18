@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useAuth } from "@/hooks/useAuth";
 import { useAccess } from "@/hooks/useAccess";
@@ -41,7 +41,7 @@ const mapTypeOptions = [
 	"Economic Maps"
 ];
 
-export default function GISMapsAddPage() {
+function GISMapsAddContent() {
 	const router = useRouter();
 	const searchParams = useSearchParams();
 	const editId = searchParams.get('edit');
@@ -743,5 +743,18 @@ export default function GISMapsAddPage() {
 				</div>
 			)}
 		</div>
+	);
+}
+
+export default function GISMapsAddPage() {
+	return (
+		<Suspense fallback={
+			<div className="flex items-center justify-center py-12">
+				<div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#0b4d2b]"></div>
+				<span className="ml-3 text-gray-600">Loading...</span>
+			</div>
+		}>
+			<GISMapsAddContent />
+		</Suspense>
 	);
 }

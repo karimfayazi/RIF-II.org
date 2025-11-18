@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { ArrowLeft, MapPin, Droplet, Trash2, Layers } from 'lucide-react';
 import Link from 'next/link';
@@ -297,7 +297,7 @@ function GISMapViewer({ filePath, mapType }: { filePath: string; mapType: string
 	);
 }
 
-export default function MapViewPage() {
+function MapViewContent() {
 	const searchParams = useSearchParams();
 	const router = useRouter();
 	const district = searchParams.get('district');
@@ -400,3 +400,19 @@ export default function MapViewPage() {
 	);
 }
 
+export default function MapViewPage() {
+	return (
+		<Suspense fallback={
+			<div className="space-y-6">
+				<div className="flex items-center justify-center min-h-[400px]">
+					<div className="text-center">
+						<div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#0b4d2b] mx-auto mb-2"></div>
+						<p className="text-sm text-gray-600">Loading map...</p>
+					</div>
+				</div>
+			</div>
+		}>
+			<MapViewContent />
+		</Suspense>
+	);
+}
