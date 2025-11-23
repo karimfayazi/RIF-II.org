@@ -349,7 +349,7 @@ export default function AddPicturesPage() {
 								<input
 									type="text"
 									name="GroupName"
-									value={formData.GroupName}
+									value={formData.GroupName || ""}
 									onChange={handleInputChange}
 									className="w-full px-2 py-1 text-xs border border-gray-300 rounded focus:ring-1 focus:ring-[#0b4d2b] focus:border-[#0b4d2b] outline-none"
 								/>
@@ -362,7 +362,7 @@ export default function AddPicturesPage() {
 								<input
 									type="text"
 									name="MainCategory"
-									value={formData.MainCategory}
+									value={formData.MainCategory || ""}
 									onChange={handleInputChange}
 									required
 									className="w-full px-2 py-1 text-xs border border-gray-300 rounded focus:ring-1 focus:ring-[#0b4d2b] focus:border-[#0b4d2b] outline-none"
@@ -376,7 +376,7 @@ export default function AddPicturesPage() {
 								<input
 									type="text"
 									name="SubCategory"
-									value={formData.SubCategory}
+									value={formData.SubCategory || ""}
 									onChange={handleInputChange}
 									required
 									className="w-full px-2 py-1 text-xs border border-gray-300 rounded focus:ring-1 focus:ring-[#0b4d2b] focus:border-[#0b4d2b] outline-none"
@@ -390,7 +390,7 @@ export default function AddPicturesPage() {
 								<input
 									type="text"
 									name="FileName"
-									value={formData.FileName}
+									value={formData.FileName || ""}
 									onChange={handleInputChange}
 									required
 									className="w-full px-2 py-1 text-xs border border-gray-300 rounded focus:ring-1 focus:ring-[#0b4d2b] focus:border-[#0b4d2b] outline-none"
@@ -404,7 +404,7 @@ export default function AddPicturesPage() {
 								<input
 									type="text"
 									name="FilePath"
-									value={formData.FilePath}
+									value={formData.FilePath || ""}
 									onChange={handleInputChange}
 									required
 									placeholder="~/Uploads/Pictures/..."
@@ -432,7 +432,7 @@ export default function AddPicturesPage() {
 								<input
 									type="text"
 									name="UploadedBy"
-									value={formData.UploadedBy}
+									value={formData.UploadedBy || ""}
 									onChange={handleInputChange}
 									className="w-full px-2 py-1 text-xs border border-gray-300 rounded focus:ring-1 focus:ring-[#0b4d2b] focus:border-[#0b4d2b] outline-none"
 								/>
@@ -445,7 +445,7 @@ export default function AddPicturesPage() {
 								<input
 									type="date"
 									name="EventDate"
-									value={formData.EventDate}
+									value={formData.EventDate || ""}
 									onChange={handleInputChange}
 									className="w-full px-2 py-1 text-xs border border-gray-300 rounded focus:ring-1 focus:ring-[#0b4d2b] focus:border-[#0b4d2b] outline-none"
 								/>
