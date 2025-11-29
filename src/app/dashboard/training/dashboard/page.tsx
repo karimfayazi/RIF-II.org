@@ -20,12 +20,17 @@ type BreakdownRow = {
   totalParticipants: number;
 };
 
-type DashboardResponse = {
-  success: boolean;
-  overall: OverallStats;
-  byEventType: BreakdownRow[];
-  byDistrict: BreakdownRow[];
-};
+type DashboardResponse = 
+  | {
+      success: true;
+      overall: OverallStats;
+      byEventType: BreakdownRow[];
+      byDistrict: BreakdownRow[];
+    }
+  | {
+      success: false;
+      message?: string;
+    };
 
 function getMaxValue(rows: BreakdownRow[], field: keyof BreakdownRow): number {
   return rows.reduce((max, row) => {
@@ -55,9 +60,9 @@ export default function TrainingCapacityBuildingDashboardPage() {
         if (!res.ok) {
           throw new Error("Failed to load dashboard data");
         }
-        const json: DashboardResponse = await res.json();
+        const json = await res.json() as DashboardResponse;
         if (!json.success) {
-          throw new Error(json.message || "Failed to load dashboard data");
+          throw new Error(json.message ?? "Failed to load dashboard data");
         }
         setData(json);
       } catch (err) {
